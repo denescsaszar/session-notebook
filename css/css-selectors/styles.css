@@ -1,0 +1,131 @@
+/* type selectors*/
+
+* {
+  border-size: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: papayawhip;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: deepskyblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* class selectors */
+
+.main-content {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.main-section {
+  background-color: ghostwhite;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: auto;
+}
+
+.box--pink {
+  background-color: pink;
+}
+
+/*attribute selector*/
+
+button[type="button"] {
+  padding: 10px;
+  border-radius: 50px;
+}
+
+ul[role="list"] {
+  list-style-type: none;
+}
+
+/*^means everything that starts with...*/
+
+a[href^="https"] {
+  color: hotpink;
+}
+
+/*pseudo classes / only become active when the user does something(in the console)*/
+
+a:hover {
+  font-weight: bold;
+}
+
+button:active {
+  background-color: tomato;
+}
+
+input:focus {
+  outline: 10px dotten tomato;
+  border: none;
+  border-radius: 10px;
+}
+
+.main-section:nth-child(3) {
+  background-color: salmon;
+}
+
+/*pseudo elements*/
+
+a[href^="https"]::before {
+  content: "🎂";
+  margin-hight: 10ps;
+}
+
+p::first-line {
+  font-size: 100px;
+}
+
+/*ID selector*/
+
+#very-important-text {
+  color: orangered;
+}
+
+/* DESCENDANT COMBINATOR target class in a section*/
+
+.main-section .text {
+  color: skyblue;
+}
+
+/* CHILD COMBINATORS */
+
+.main-section > article {
+  padding: 20px;
+  border: dotted, lightgreen;
+}
+
+/* ADJASCENT SIBLINGS*/
+
+section > span {
+  color: hotpink;
+}
+
+
+/*
+
+1. css.json -> snippets unter css.json
+2. rectangles -> https://rectangleapp.com/
+3. console?
+
+*/
